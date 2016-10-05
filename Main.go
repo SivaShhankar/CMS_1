@@ -4,20 +4,19 @@ import (
 	"log"
 	"net/http"
 
-	config "github.com/SivaShhankar/CMS_1/Database"
 	routers "github.com/SivaShhankar/CMS_1/Routers"
 )
 
 func main() {
 
 	// Load the configuration stuffs.
-	config.LoadAppConfig()
+	//config.LoadAppConfig()
 
 	// Initiate the database information.
-	config.CreateDBSession()
+	//config.CreateDBSession()
 
 	// Add the neccessary indexes.
-	config.AddIndexes()
+	//config.AddIndexes()
 
 	// Created the routes of this application/
 	mux := http.NewServeMux()
